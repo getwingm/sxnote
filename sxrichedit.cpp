@@ -56,6 +56,7 @@ bool SxRichEdit::saveFile( const QString& file )
 			QTextCharFormat fmt = frag.second;
 			out << frag;
 		}
+		setModified(false);
 		return true;
 	}
 	return false;

@@ -106,6 +106,11 @@ void SxEditor::on_common_command_clicked()
 {
 	QObject *btn = sender();
 	QString name = btn->objectName();
+
+	if(name.compare("selectAll") == 0)
+	{
+		m_pTextEdit->selectAll();
+	}
 	if(name.compare("save") == 0)
 	{
 		m_pTextEdit->save();
@@ -226,6 +231,44 @@ void SxEditor::on_editor_contextMenu( QMenu* menu, bool *pbContinue )
 	{
 		QAction *action = pMenu->addAction("É¾³ýÏß", this, SLOT(on_common_command_clicked()));
 		action->setObjectName("throughout");
+	}
+	{
+		QAction *action = menu->addSeparator();
+	}
+
+	{
+		QAction *action = menu->addAction("Ñ¡ÔñÈ«²¿", this, SLOT(on_common_command_clicked()));
+		action->setObjectName("selectAll");
+	}
+
+	{
+		QAction *action = menu->addAction("Õ³Ìù", this, SLOT(on_common_command_clicked()));
+		bool bEnable = false;
+		QClipboard *clipboard = QApplication::clipboard();
+		if(clipboard )
+		{
+			const QMimeData *mimedata = clipboard->mimeData();
+			if (mimedata->hasHtml() || mimedata->hasImage() || mimedata->hasText() || mimedata->hasUrls() || mimedata->hasFormat(KTextEditMime))
+			{
+				bEnable = true;
+			}
+		}
+		action->setEnabled(bEnable && !m_pTextEdit->isReadOnly());
+		action->setObjectName("paste");
+	}
+
+	QTextCursor cursor = m_pTextEdit->textCursor();
+	bool hasText = !cursor.selection().isEmpty();
+	{
+		QAction *action = menu->addAction("¼ôÇÐ", this, SLOT(on_common_command_clicked()));
+		action->setEnabled(hasText && !m_pTextEdit->isReadOnly());
+		action->setObjectName("cut");
+	}
+
+	{
+		QAction *action = menu->addAction("¸´ÖÆ", this, SLOT(on_common_command_clicked()));
+		action->setEnabled(hasText);
+		action->setObjectName("copy");
 	}
 	*pbContinue  = false;
 }
