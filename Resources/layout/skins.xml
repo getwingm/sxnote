@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" ?>
+<uiskin>
+	<KPopupWindow name="winframe" closeOnEscape="false" backgroundColor="19,179,253" maskImage="qrcimg:/Resources/image/maskimage.png" frameImage="qrcimg:/Resources/image/frameimage.png" maskMargins="0,0,0,0"/>
+	<KPushButton name="toolbar" imagePath=":/image/theme/roundframe2_normal.png|:/image/theme/roundframe2_hover.png|:/image/theme/roundframe_down.png"/>
+</uiskin>

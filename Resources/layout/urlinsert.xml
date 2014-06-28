@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" ?>
+<uitree>
+  <KDialogBase fixSize="300,150" windowStyle="ToolWindow">
+    <KTitlebar fixHeight="22"/>
+    <KSpacer/>
+    <KSpacer layout="VBox" margins="10,0,10,10">
+      <KSpacer layout="HBox" fixHeight="25" itemSpacing="5">
+        <KLabel text="标签名：" autoAdjust="true"/>
+        <KFrameItem layout="VBox" frameType="GridFour" frameSwitch="true" acceptHover="true" defaultFrame="RoundFlatTranslucent">
+          <KLineEdit objectName="label"/>
+        </KFrameItem>
+      </KSpacer>
+      <KSpacer layout="HBox" fixHeight="25" itemSpacing="5">
+        <KLabel text="超链接：" autoAdjust="true"/>
+        <KFrameItem layout="VBox" frameType="GridFour" frameSwitch="true" acceptHover="true" defaultFrame="RoundFlatTranslucent">
+          <KLineEdit objectName="link"/>
+        </KFrameItem>
+      </KSpacer>
+      <KSpacer/>
+      <KSpacer layout="HBox" fixHeight="25">
+        <KSpacer/>
+        <KPushButton objectName="btnApply" text="确认" fixWidth="50" itemSpacing="10"/>
+        <KPushButton objectName="btnCancel" text="取消" fixWidth="50"/>
+        <KSpacer/>
+      </KSpacer>      
+    </KSpacer>
+  </KDialogBase>
+</uitree>

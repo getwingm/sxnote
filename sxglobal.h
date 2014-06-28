@@ -1,0 +1,23 @@
+#pragma once;
+
+
+
+#define FILESYS_INVALID_CHARS		("\\/:*?\"<>|")
+#define FILESTORE_ROOT				("/FileStore")
+
+
+#define TREE_ITEM_NEWFILE			(1)
+#define TREE_ITEM_NEWFOLDER			(2)
+#define TREE_ITEM_OPENFOLDER		(3)
+#define TREE_ITEM_OPENFILE			(4)
+#define TREE_ITEM_DELETEITEM		(5)
+#define TREE_ITEM_MOVETOPREV		(6)
+#define TREE_ITEM_MOVETONEXT		(7)
+#define TREE_ITEM_MOVETOPARENT		(8)
+#define TREE_ITEM_MOVETOTOP			(9)
+#define TREE_ITEM_MOVETOBOTTOM		(10)
+#define TREE_ITEM_RENAME			(11)
+#define TREE_ITEM_CHECKFOLDER		(12)
+#define TREE_ITEM_UPDATE			(13)
+#define TREE_ITEM_EXPANDED			(14)
+#define TREE_ITEM_COLLAPSED			(15)

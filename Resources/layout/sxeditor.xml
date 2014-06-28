@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" ?>
+<uitree>
+	<KFrameWindow objectName="xdeditor" size="800,600" windowStyle="MainWindow" titlebar.fixHeight="25" titlebar.titleBold="false" titlebar.iconPath="res:/Resources/image/tree_text.png">
+    <KFrameItem layout="Anchor">
+      <KSpacer anchor="Left:3|Top:3|Right:3|Bottom:3" layout="VBox" margins="0,0,0,0" spacing="10">
+        <KFrameItem layout="VBox" imagePath="res:/Resources/image/toolbar_bk1.png" frameType="GridFour" fixHeight="22">
+          <KToolBar visible="true" objectName="edittoolbar" layout="HBox">
+            <KPushButton objectName="undo" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_undo.png"/>
+            <KPushButton objectName="redo" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_redo.png"/>
+            <KPushButton objectName="save" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_save.png"/>
+            <KPushButton objectName="copy" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_copy.png"/>
+            <KPushButton objectName="paste" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_paste.png"/>
+            <KPushButton objectName="cut" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_cut.png"/>
+            <KPushButton objectName="link" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_link.png"/>
+            <KPushButton objectName="replace" fixWidth="24" iconSize="24" visible="true" iconPath="res:/Resources/image/editico_replace.png"/>
+            <KPushButton objectName="find" fixWidth="24" iconSize="24" visible="true" iconPath="res:/Resources/image/editico_find.png"/>
+            <KPushButton objectName="delete" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_delete.png"/>
+            <KPushButton objectName="bold" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_bold.png"/>
+            <KPushButton objectName="italic" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_italic.png"/>
+            <KPushButton objectName="underline" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_underline.png"/>
+            <KPushButton objectName="throughout" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_throughout.png"/>
+            <KPushButton objectName="alignleft" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_alignleft.png"/>
+            <KPushButton objectName="aligncenter" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_aligncenter.png"/>
+            <KPushButton objectName="alignright" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_alignright.png"/>
+			<KPushButton objectName="textcolor" fixWidth="24" iconSize="24" iconPath="res:/Resources/image/editico_textcolor.png"/>
+		  </KToolBar>
+        </KFrameItem>
+        <KFrameItem layout="VBox" frameType="GridFour" defaultFrame="RoundWhite">
+          <SxRichEdit objectName="richtexteditor" backgroundColor="0,0,0,0"/>
+       </KFrameItem>
+	    </KSpacer>
+    </KFrameItem>
+  </KFrameWindow>
+</uitree>
