@@ -4,14 +4,14 @@ sxnote<br>
 <br>
 本项目依赖kxfw的框架，其相关目录结构如下<br>
 ProjectRoot<br>
-  |--->kxfw<br>
-  |      |--->kxfw.sln<br>
-  |      |--->kxfw.vcproj<br>
-  |      |----.....<br>
-  |--->sxnote<br>
-    	   |--->sxnote.sln<br>
-    	   |--->sxnote.vcproj
-    	   |----.....<br>
+..|--->kxfw<br>
+..|......|--->kxfw.sln<br>
+..|......|--->kxfw.vcproj<br>
+..|......|----.....<br>
+..|--->sxnote<br>
+.........|--->sxnote.sln<br>
+.........|--->sxnote.vcproj
+.........|----.....<br>
 <br>
 编译项目前，请确保是否已经安装：<br>
 1.VS2008+VS2008SP1补丁<br>
