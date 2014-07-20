@@ -10,7 +10,7 @@ ProjectRoot<br>
 ..|......|----.....<br>
 ..|--->sxnote<br>
 .........|--->sxnote.sln<br>
-.........|--->sxnote.vcproj
+.........|--->sxnote.vcproj<br>
 .........|----.....<br>
 <br>
 编译项目前，请确保是否已经安装：<br>
