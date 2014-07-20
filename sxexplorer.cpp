@@ -399,6 +399,7 @@ void SxExplorer::on_tree_lineEdit_editingFinished()
 	data.insert(Qt::DisplayRole, name);
 	m_pTreeModel->setData(nodeid, data);
 	m_pTreeWidget->tryToSetAction(nodeid, TREE_ITEM_UPDATE, name, QVariant());
+	m_pTreeModel->modelToFile(m_modelFile);
 }
 
 void SxExplorer::on_tree_itemExpanded( qint64 nodeid )

@@ -217,7 +217,8 @@ bool SxTreeItem::setAction( int id, const QVariant& val, QVariant& result )
 	else if(id == TREE_ITEM_UPDATE)
 	{
 		m_data.insert(Qt::DisplayRole, val);
-		m_label->setText(val.toString());
+		m_label->setText(val.toString()); 
+		return true;
 	}
 	return false;
 }
