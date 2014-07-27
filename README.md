@@ -18,6 +18,8 @@ ProjectRoot<br>
 2.qt-win-opensource-4.7.1-vs2008.exe<br>
 3.qt-vs-addin-1.1.11-opensource.exe<br>
 <br>
-如果有问题，可以发邮件给我。<br>
+<br>
+<br>
+演示效果，可到<a href="http://www.kxtry.com">http://www.kxtry.com<a>主页上看。<br>
 
 
